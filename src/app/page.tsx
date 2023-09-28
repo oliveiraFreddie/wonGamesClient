@@ -1,5 +1,7 @@
-import Main from '@/components/Main'
+'use client'
 
-export default function Home() {
-  return <Main />
+import Home from '@/templates/Home'
+
+export default function Index() {
+  return <Home />
 }
