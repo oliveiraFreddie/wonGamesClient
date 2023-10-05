@@ -13,7 +13,9 @@ const props = {
 
 describe('<Banner />', () => {
   it('should render correctly', () => {
-    const { container } = renderWithTheme(<Banner {...props} />)
+    const { container } = renderWithTheme(
+      <Banner ribbon={undefined} {...props} />
+    )
 
     expect(
       screen.getByRole('heading', { name: /Defy death/i })

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   title: 'Red Dead está de de volta!',
   subtitle: 'Venha conhecer as novas aventuras de John Marston',

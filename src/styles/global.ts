@@ -1,5 +1,3 @@
-'use client'
-
 import {
   createGlobalStyle,
   css,
@@ -12,7 +10,7 @@ type GlobalStylesProps = {
 }
 
 const GlobalStyles: GlobalStyleComponent<
-  GlobalStylesProps,
+  { theme?: DefaultTheme | undefined } & GlobalStylesProps,
   DefaultTheme
 > = createGlobalStyle`
   @font-face {
@@ -58,12 +56,12 @@ const GlobalStyles: GlobalStyleComponent<
     }
 
     body {
-      font-family: ${theme.font.family};
-      font-size: ${theme.font.sizes.medium};
+      font-family: ${theme?.font.family};
+      font-size: ${theme?.font.sizes.medium};
 
       ${!removeBg &&
       css`
-        background-color: ${theme.colors.mainBg};
+        background-color: ${theme?.colors.mainBg};
       `}
     }
   `}

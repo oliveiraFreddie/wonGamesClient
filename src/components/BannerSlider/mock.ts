@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default [
   {
     img: 'https://source.unsplash.com/user/willianjusten/1042x580',

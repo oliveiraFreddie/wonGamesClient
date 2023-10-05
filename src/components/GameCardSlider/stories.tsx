@@ -21,3 +21,5 @@ export const Default: StoryFn<GameCardProps[]> = (args) => (
     <GameCardSlider items={args} {...args} />
   </div>
 )
+
+Default.args = { ...items }
